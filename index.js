@@ -40,6 +40,7 @@ function newcard(){
         if (player.coins <= 0 ){
             player.coins = 0
             hasmoney = false
+            messageEl.textContent = "You are out of money."
         }
     }
     
@@ -88,6 +89,7 @@ function startgame(){
         if (player.coins <= 0 ){
             player.coins = 0
             hasmoney = false
+            messageEl.textContent = "You are out of money."
         }
     }
 }
@@ -95,5 +97,3 @@ function startgame(){
 
 playerEl.textContent = player.name + ": "+ player.coins + "$"
 
-
-console.log(hasmoney)
